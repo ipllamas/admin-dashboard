@@ -1,0 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --website-blue: rgb(0, 132, 255);
+}
+
+.sidebar {
+  background-color: var(--website-blue);
+  color: white;
+}

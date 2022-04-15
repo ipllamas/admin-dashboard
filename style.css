@@ -5,9 +5,58 @@
 
 :root {
   --website-blue: rgb(0, 132, 255);
+  --website-gray: rgb(214, 214, 214);
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 4fr;
 }
 
 .sidebar {
   background-color: var(--website-blue);
   color: white;
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 1rem;
+}
+
+.sidebar ul>li {
+  list-style: none;
+  margin: 5px;
+}
+
+.header {
+  padding-left: 50px;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.main {
+  background-color: var(--website-gray);
+  padding-left: 50px;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 50px;
+}
+
+.projects {
+  grid-column: 1 / 2;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.side-content {
+  grid-column: 2 / 3;
 }

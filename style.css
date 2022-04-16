@@ -4,8 +4,8 @@
 }
 
 :root {
-  --website-blue: rgb(0, 132, 255);
-  --website-gray: rgb(214, 214, 214);
+  --website-blue: rgb(29, 146, 255);
+  --website-gray: rgb(230, 230, 230);
 }
 
 body {
@@ -24,11 +24,34 @@ body {
   flex-direction: column;
   gap: 30px;
   padding: 1rem;
+  padding-top: 1.5rem;
+  padding-left: 2rem;
+}
+
+.sidebar-header{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.sidebar-header img{
+  max-width: 30px;
 }
 
 .sidebar ul>li {
   list-style: none;
   margin: 5px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.sidebar-img {
+  max-width: 18px;
 }
 
 .header {
@@ -37,6 +60,26 @@ body {
   grid-row: 1 / 2;
   display: grid;
   grid-template: 1fr 1fr / 3fr 2fr;
+  align-items: start;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  padding-top: 1.5rem;
+  gap: 1rem;
+}
+
+.search img {
+  max-width: 28px;
+}
+
+.search-input {
+  width: 75%;
+  background-color: var(--website-gray);
+  border-color: rgb(255, 255, 255, 0);
+  border-radius: 30px;
+  height: 20px;
 }
 
 .header-buttons {
@@ -56,12 +99,13 @@ body {
 
 .main {
   background-color: var(--website-gray);
+  padding-top: 2rem;
   padding-left: 50px;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 50px;
+  grid-template-columns: 3fr 2fr;
+  gap: 5rem;
 }
 
 .projects {
@@ -71,7 +115,7 @@ body {
 .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+  gap: 5rem;
 }
 
 .side-content {

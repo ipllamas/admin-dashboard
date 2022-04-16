@@ -35,6 +35,23 @@ body {
   padding-left: 50px;
   grid-column: 2 / 3;
   grid-row: 1 / 2;
+  display: grid;
+  grid-template: 1fr 1fr / 3fr 2fr;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.header-buttons button {
+  font-size: 20px;
+  color: white;
+  background-color: var(--website-blue);
+  padding: 5px 20px;
+  border-color: rgb(255, 255, 255, 0);
+  border-radius: 30px;
 }
 
 .main {

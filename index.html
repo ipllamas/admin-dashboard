@@ -18,13 +18,13 @@
       <li><img class="sidebar-img" src="assets/card-account-details-outline.png">Profile</li>
       <li><img class="sidebar-img" src="assets/message-reply.png">Messages</li>
       <li><img class="sidebar-img" src="assets/clock-time-three.png">History</li>
-      <li><img class="sidebar-img" src="assets/home.png">Tasks</li>
-      <li><img class="sidebar-img" src="assets/home.png">Communities</li>
+      <li><img class="sidebar-img" src="assets/calendar-multiple-check.png">Tasks</li>
+      <li><img class="sidebar-img" src="assets/account-group.png">Communities</li>
     </ul>
     <ul>
-      <li><img class="sidebar-img" src="assets/home.png">Settings</li>
-      <li><img class="sidebar-img" src="assets/home.png">Support</li>
-      <li><img class="sidebar-img" src="assets/home.png">Privacy</li>
+      <li><img class="sidebar-img" src="assets/cog.png">Settings</li>
+      <li><img class="sidebar-img" src="assets/help-box.png">Support</li>
+      <li><img class="sidebar-img" src="assets/shield-check.png">Privacy</li>
     </ul>
   </div>
 
@@ -33,7 +33,10 @@
       <img src="assets/magnify.png">
       <input type="text" class="search-input">
     </div>
-    <p>Ivan Llamas</p>
+    <div class="profile-header">
+      <img src="assets/panda.png">
+      <p>Ivan Llamas</p>
+    </div>
     <div>
       <p>Hi there,</p>
       <p>Ivan Llamas (@illamas)</p>
@@ -49,43 +52,83 @@
       <h1>Your Projects</h1>
       <div class="cards-container">
         <div class="project-card" id="project-1">
-          <h1>Super Cool Project</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Donec tristique faucibus eros, nec feugiat odio feugiat non. 
-            Suspendisse quis arcu tellus. Nunc cursus vitae ante eget convallis. 
-            Fusce tincidunt, nunc vel malesuada rhoncus, quam est pretium 
-            ante, at aliquet elit magna id erat.</p>
+          <div class="card-text">
+            <h1>Super Cool Project</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              Donec tristique faucibus eros, nec feugiat odio feugiat non. 
+              Suspendisse quis arcu tellus. Nunc cursus vitae ante eget convallis. 
+              Fusce tincidunt, nunc vel malesuada rhoncus.</p>
+          </div>
+          <div>
+            <img src="assets/star-plus-outline.png" alt="star outline">
+            <img src="assets/eye-plus-outline.png" alt="eye outline">
+            <img src="assets/share-variant-outline.png" alt="share icon">
+          </div>
         </div>
         <div class="project-card" id="project-2">
-          <h1>Less Cool Project</h1>
-          <p>Duis sed elit pharetra, consectetur erat sit amet, tempor arcu. 
-            Nulla facilisi. Phasellus pulvinar iaculis luctus. 
-            Nam eget ipsum tincidunt, tristique enim quis, sodales 
-            risus. Sed faucibus nulla eu ipsum auctor, nec tempor nibh cursus.</p>
+          <div class="card-text">
+            <h1>Less Cool Project</h1>
+            <p>Duis sed elit pharetra, consectetur erat sit amet, tempor arcu. 
+              Nulla facilisi. Phasellus pulvinar iaculis luctus. 
+              Nam eget ipsum tincidunt, tristique enim quis, sodales 
+              risus. Sed faucibus nulla eu ipsum auctor, nec tempor nibh cursus.</p>
+          </div>
+          <div>
+            <img src="assets/star-plus-outline.png" alt="star outline">
+            <img src="assets/eye-plus-outline.png" alt="eye outline">
+            <img src="assets/share-variant-outline.png" alt="share icon">
+          </div>
         </div>
         <div class="project-card" id="project-3">
-          <h1>Impossible App</h1>
-          <p>Duis cursus suscipit ultrices. Pellentesque luctus mauris a dui pharetra varius. 
-            Donec nulla nulla, gravida eget placerat vitae, mattis eu lorem.</p>
+          <div class="card-text">
+            <h1>Impossible App</h1>
+            <p>Duis cursus suscipit ultrices. Pellentesque luctus mauris a dui pharetra varius. 
+              Donec nulla nulla, gravida eget placerat vitae, mattis eu lorem.</p>
+          </div>
+          <div>
+            <img src="assets/star-plus-outline.png" alt="star outline">
+            <img src="assets/eye-plus-outline.png" alt="eye outline">
+            <img src="assets/share-variant-outline.png" alt="share icon">
+          </div>
         </div>
         <div class="project-card" id="project-4">
-          <h1>Easy Peasy App</h1>
-          <p>Aliquam ornare lectus enim, et tempus est laoreet a. Suspendisse in metus libero. 
-            Praesent pretium, massa non maximus viverra, est magna fermentum ante, 
-            non dapibus risus libero sed ante. Etiam dictum, erat sed 
-            cursus molestie, orci quam dapibus tellus, in finibus arcu odio vel dolor.</p>
+          <div class="card-text">
+            <h1>Easy Peasy App</h1>
+            <p>Aliquam ornare lectus enim, et tempus est laoreet a. Suspendisse in metus libero. 
+              Praesent pretium, massa non maximus viverra, est magna fermentum ante, 
+              non dapibus risus libero sed ante. Etiam dictum, erat sed 
+              cursus molestie, orci quam dapibus.</p>
+          </div>
+          <div>
+            <img src="assets/star-plus-outline.png" alt="star outline">
+            <img src="assets/eye-plus-outline.png" alt="eye outline">
+            <img src="assets/share-variant-outline.png" alt="share icon">
+          </div>
         </div>
         <div class="project-card" id="project-5">
-          <h1>Ad Blocker</h1>
-          <p>Maecenas nec mollis lacus. Donec eu tellus egestas, fermentum dui non, rutrum ex. Morbi ac felis sed nunc gravida tincidunt vel in ipsum. 
-            In mollis scelerisque suscipit. </p>
+          <div class="card-text">
+            <h1>Ad Blocker</h1>
+            <p>Maecenas nec mollis lacus. Donec eu tellus egestas, fermentum dui non, rutrum ex. Morbi ac felis sed nunc gravida tincidunt vel in ipsum. 
+              In mollis scelerisque suscipit. </p>
+          </div>
+          <div>
+            <img src="assets/star-plus-outline.png" alt="star outline">
+            <img src="assets/eye-plus-outline.png" alt="eye outline">
+            <img src="assets/share-variant-outline.png" alt="share icon">
+          </div>
         </div>
         <div class="project-card" id="project-6">
-          <h1>Money Maker</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          <div class="card-text">
+           <h1>Money Maker</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Sed metus nibh, dictum ac mattis quis, ultricies ut ipsum. Nullam nec velit ut quam sollicitudin feugiat. 
-            Sed vulputate sapien a efficitur ullamcorper. Donec dolor dui, 
-            facilisis et est vitae, dapibus faucibus nibh.</p>
+            Sed vulputate sapien a efficitur ullamcorper.</p>
+          </div>
+          <div>
+            <img src="assets/star-plus-outline.png" alt="star outline">
+            <img src="assets/eye-plus-outline.png" alt="eye outline">
+            <img src="assets/share-variant-outline.png" alt="share icon">
+          </div>
         </div>
       </div>
     </div>

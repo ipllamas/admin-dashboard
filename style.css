@@ -61,6 +61,7 @@ body {
   display: grid;
   grid-template: 1fr 1fr / 3fr 2fr;
   align-items: start;
+  gap: 1rem;
 }
 
 .search {
@@ -88,17 +89,53 @@ body {
   align-items: center;
   padding-top: 1rem;
   padding-left: 10rem;
-  gap: 3rem;
+  padding-right: 5rem;
+  gap: 1rem;
+}
+
+.profile-header>div:first-of-type {
+  border-radius: 50%;
+  background-color: orange;
+  padding: 5px;
+  padding-bottom: 0;
+  margin-bottom: 5px;
 }
 
 .profile-header img {
   max-width: 25px;
-  background-color: greenyellow;
-  padding: 15px;
 }
 
 .profile-header p {
   font-size: 24px;
+  margin-left: 1rem;
+}
+
+.header-greeting {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.header-greeting>div:first-child {
+  border-radius: 50%;
+  background-color: orange;
+  padding: 10px;
+  padding-bottom: 0;
+  margin-bottom: 5px;
+}
+
+.header-greeting div img {
+  max-width: 50px;
+}
+
+.greeting-text p {
+  font-weight: bold;
+}
+
+.greeting-text p:last-child {
+  font-size: 24px;
+  padding-top: 5px;
 }
 
 .header-buttons {
@@ -106,6 +143,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   gap: 2rem;
+  padding-top: 2rem;
 }
 
 .header-buttons button {
@@ -141,7 +179,7 @@ body {
 .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
-  gap: 3rem;
+  gap: 4.5rem;
 }
 
 .project-card {
@@ -177,11 +215,61 @@ body {
   grid-column: 2 / 3;
   display: flex;
   flex-direction: column;
-  gap: 10rem;
+  gap: 2rem;
 }
 
-.announcements,
-.trending {
+.announcement-card,
+.trending-card {
   background-color: white;
   border-radius: 10px;
+  max-width: 15vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 1rem;
+}
+
+.announcement-item {
+  margin-bottom: 1rem;
+  width: 85%;
+}
+
+.announcement-item:nth-child(1n+2) {
+  border-top: 2px solid var(--website-gray);
+  padding-top: 10px;
+}
+
+.trending-card {
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.trending-item {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+  padding: 5px 1rem 5px 5px;
+  gap: 1rem;
+}
+
+#trending-1 {
+  background-color: aquamarine;
+}
+
+#trending-2 {
+  background-color: pink;
+}
+
+#trending-3 {
+  background-color: greenyellow
+}
+
+.trending-image {
+  width: 40px;
+  height: 40px;
+}
+
+.trending-image img {
+  width: 100%;
+  border-radius: 50%;
 }

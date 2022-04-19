@@ -34,12 +34,20 @@
       <input type="text" class="search-input">
     </div>
     <div class="profile-header">
-      <img src="assets/panda.png">
+      <img id="notification-bell" src="assets/bell-ring-outline.png" alt="bell icon">
+      <div>
+        <img src="assets/panda.png" alt="panda image">
+      </div>
       <p>Ivan Llamas</p>
     </div>
-    <div>
-      <p>Hi there,</p>
-      <p>Ivan Llamas (@illamas)</p>
+    <div class="header-greeting">
+      <div>
+        <img src="assets/panda.png" alt="panda image">
+      </div>
+      <div class="greeting-text">
+        <p>Hi there,</p>
+        <p>Ivan Llamas (@illamas)</p>
+      </div>
     </div>
     <div class="header-buttons">
       <button>New</button>
@@ -135,22 +143,51 @@
     <div class="side-content">
       <div class="announcements">
         <h1>Announcements</h1>
-        <div class="announcement-item">
-          <h3>Site Maintenance</h3>
-          <p>Phasellus vitae elementum felis, non molestie libero. Ut commodo nunc non ipsum porta convallis.</p>
-        </div>
-        <div class="announcement-item">
-          <h3>Community Share Day</h3>
-          <p>Nulla imperdiet mauris in nisl viverra, sit amet convallis augue porttitor. Pellentesque blandit aliquam nunc eu sagittis.</p>
-        </div>
-        <div class="announcement-item">
-          <h3>Updated Privacy Policy</h3>
-          <p>Maecenas tempor id ex ut pretium. Vivamus interdum eleifend erat, non convallis leo suscipit in. Morbi eleifend dapibus nisi, vitae egestas quam vestibulum sit amet.</p>
+        <div class="announcement-card">
+          <div class="announcement-item">
+            <h3>Site Maintenance</h3>
+            <p>Phasellus vitae elementum felis, non molestie libero. Ut commodo nunc non ipsum porta convallis.</p>
+          </div>
+          <div class="announcement-item">
+            <h3>Community Share Day</h3>
+            <p>Nulla imperdiet mauris in nisl viverra, sit amet convallis augue porttitor. Pellentesque blandit aliquam nunc eu sagittis.</p>
+          </div>
+          <div class="announcement-item">
+            <h3>Updated Privacy Policy</h3>
+            <p>Maecenas tempor id ex ut pretium. Vivamus interdum eleifend erat, non convallis leo suscipit in. Morbi eleifend dapibus nisi, vitae egestas quam vestibulum sit amet.</p>
+          </div>
         </div>
       </div>
       <div class="trending">
-        <h1>Trending</h1>
+        <h2>Trending</h2>
         <div class="trending-card">
+          <div class="trending-item" id="trending-1">
+            <div class="trending-image">
+              <img src="assets/cat.png" alt="cat iamge">
+            </div>
+            <div class="trending-text">
+              <p>@dummy</p>
+              <p>Fake Group Name</p>
+            </div>
+          </div>
+          <div class="trending-item" id="trending-2">
+            <div class="trending-image">
+              <img src="assets/dog.png" alt="dog iamge">
+            </div>
+            <div class="trending-text">
+              <p>@dummy</p>
+              <p>Fake Group Name</p>
+            </div>
+          </div>
+          <div class="trending-item" id="trending-3">
+            <div class="trending-image">
+              <img src="assets/koala.png" alt="koala iamge">
+            </div>
+            <div class="trending-text">
+              <p>@dummy</p>
+              <p>Fake Group Name</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
